@@ -1,12 +1,14 @@
-import React from 'react'
+import React from "react";
 
-const Header = ({totalIncome}) => {
+const Header = ({ totalIncome }) => {
   return (
     <header>
-        <h1>Income Tracker</h1>
-        <div>Rs. {totalIncome}</div>
+      <h1 className="title">Income Tracker</h1>
+      <div>
+        <p className="header-tag">Rs. {totalIncome}</p>
+      </div>
     </header>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;
